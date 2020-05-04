@@ -12,3 +12,4 @@ After step 3, since the onReceive() callback of both the normal BroadcastReceive
 ### Dataset in the article is accessible [here](https://github.com/Anchor-Locator/anchor).
 
 ### Anchor tool tryout is accessible [here]().
+We will open source Anchor upon publication.
