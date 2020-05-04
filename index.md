@@ -1,9 +1,5 @@
 ## Anchor: Android app crash Locator
 
-### General Introduction
-
-
-
 ### Motivating Example 
 #### Paradox in Fan et al's fix:
 
@@ -13,9 +9,6 @@ After step 3, since the onReceive() callback of both the normal BroadcastReceive
               
 After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the SELECT_IMAGE event. The leaked BroadcastReceivers invokes startActivityForResult(), opening the first SelectImageActivity, then the normal BroadcastReceiver invokes startActivityForResult(), causing its MainActivity to regain focus (i.e., MainActivity on top of the first SelectImageActivity), then opening a second SelectImageActivity. Resulting in the unexpected Activity Stack in Figure 4.
 
-### Phase 1
+### Dataset in the article is accessible [here](https://github.com/Anchor-Locator/anchor).
 
-### Phase 2
-
-### Link to dataset
-
+## Tool tryout.
