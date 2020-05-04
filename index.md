@@ -11,7 +11,7 @@ After step 3, since the onReceive() callback of both the normal BroadcastReceive
 
 #### Regression caused by Developer’s Fix ec0b92.
 
-![Regression](regression_example.png | width=48)
+![Regression](regression_example.png)
               
 After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the eventBroadcastReceivers invoke startActivityForResult(), causing two ImageSelectActivity to be opened. Clicking on back button twice will direct the user to the ImageSelectActivity opened earlier. And causing much confusion to the developer.
 
