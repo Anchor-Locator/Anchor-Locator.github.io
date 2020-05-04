@@ -8,7 +8,8 @@
 Below is the detailed explaination for Fan et al.'s fix and Developer's fix.
 
 Regression caused by Developer’s Fix ec0b92.
-              ![Regression](regression_example.png)
+
+![Regression](regression_example.png)
               
 Fan et al.:
 After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the event. Puting a null-checker will prevent the leaked BroadcastReceiver from invoking startActivityForResult(), and allow the normal BroadcastReceiver to execute startActivityForResult(). Therefore the fix would work.
