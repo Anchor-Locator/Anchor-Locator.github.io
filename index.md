@@ -7,7 +7,7 @@
 ### Motivating Example 
 #### Paradox in Fan et al's fix:
 
-After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the event. Puting a null-checker will prevent the leaked BroadcastReceiver from invoking startActivityForResult(), and allow the normal BroadcastReceiver to execute startActivityForResult(). Therefore the fix would work.
+After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the SELECT_IMAGE event. Puting a null-checker will prevent the leaked BroadcastReceiver from invoking startActivityForResult(), and allow the normal BroadcastReceiver to execute startActivityForResult(). Therefore the fix would work.
 
 #### Regression caused by Developer’s Fix ec0b92.
 
