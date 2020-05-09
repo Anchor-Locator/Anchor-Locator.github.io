@@ -9,7 +9,7 @@ After step 3, since the onReceive() callback of both the normal BroadcastReceive
 
 After step 3, since the onReceive() callback of both the normal BroadcastReceiver and the leaked object BroadcastReceiver would respond to the SELECT_IMAGE event. The leaked BroadcastReceivers invokes startActivityForResult(), opening the first SelectImageActivity, then the normal BroadcastReceiver invokes startActivityForResult(), causing its MainActivity to regain focus (i.e., MainActivity on top of the first SelectImageActivity), then opening a second SelectImageActivity. Resulting in the unexpected Activity Stack in Figure 4.
 
-<img src=regression_example.png width="480">
+<img src="https://github.com/Anchor-Locator/Anchor-Locator.github.io/blob/master/regression_example.png?raw=true" width="480">
 
 ### Dataset in the article is accessible [here](https://github.com/Anchor-Locator/anchor).
 
